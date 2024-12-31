@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Header Styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    height: auto;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FFF8F2;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Logo Styling */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.educraft {
+    font-size: 24px;
+    font-weight: 800;
+    color: #18063c;
+}
+
+/* Top Navigation */
+.top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    color: #ff553e;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: #ff553e;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+    border: none;
+    font-size: medium;
+}
+
+.menus {
+    display: flex;
+    gap: 20px;
+    color: #1c0e0d;
+    
+}
+
+nav > div{
+    cursor: pointer;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    color: #ff553e;
+}
+
+
+@media (max-width: 630px) {
+    .header {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        z-index: 2000;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        
+    }
+
+    .menus {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #FFF8F2;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        
+    }
+
+    .login {
+        display: none;
+    }
+    .menus.active {
+        display: flex;
+    }
+
+    .sign-up {
+        display: none;
+    }
+
+    .login {
+        margin-left: 0;
+    }
+}
+
+
+@media (min-width: 630px) and (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .menus {
+        gap: 15px;
+    }
+
+    .login {
+        margin-left: 15px;
+    }
+
+    .sign-up {
+        margin-left: 15px;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .menus {
+        gap: 25px;
+    }
+
+    .login {
+        margin-left: 20px;
+    }
+
+    .sign-up {
+        margin-left: 20px;
+    }
+}
+
+
+@media (min-width: 1441px) {
+    .header {
+        padding: 30px 80px;
+    }
+
+    .menus {
+        gap: 30px;
+    }
+
+    .login {
+        margin-left: 30px;
+    }
+
+    .sign-up {
+        margin-left: 30px;
+    }
+}

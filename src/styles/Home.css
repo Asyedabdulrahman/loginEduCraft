@@ -1,0 +1,529 @@
+#home {
+  background-color: #fff8f2;
+  padding-top: 50px;
+  height: 100vh;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  width: 100%;
+   
+}
+.vector4 {
+  position: absolute;
+  top: 100px;
+  right: 3px;
+  width: 30px;
+  z-index: 1;
+  display: block;
+ 
+}
+.vector {
+  position: absolute;
+  top: 190px;
+  left: 230px;
+  width: 90px;
+  z-index: 1;
+  display: block;
+}
+.clock {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 130px;
+  z-index: 1;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.content {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  width: 50%;
+  margin-top: 5px;
+  padding: 20px;
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+}
+.heading-collab {
+  font-size: 56px;
+  font-weight: 700;
+  color: black;
+  line-height: 65px;
+  position: relative;
+  z-index: 1000;
+}
+
+.shape {
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  width: 80px;
+  z-index: 1;
+  display: block;
+  z-index: 1001;
+}
+
+.unite-para {
+  font-size: 15px;
+  font-weight: 400;
+  color: #40201e;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.freetrail-button {
+  background-color: #ff553e;
+
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #ff6347;
+  }
+}
+
+.mac {
+  position: absolute;
+  top: 340px;
+
+  width: 340px;
+  z-index: 1;
+  display: block;
+}
+
+.board {
+  position: absolute;
+  top: 480px;
+  right: 340px;
+  width: 130px;
+  z-index: 1;
+  display: block;
+}
+.vector3 {
+  position: absolute;
+  top: 600px;
+  right: 430px;
+  width: 70px;
+  z-index: 1;
+  display: block;
+}
+
+.vector1 {
+  position: absolute;
+  top: 480px;
+  right: 260px;
+  width: 50px;
+  z-index: 1;
+  display: block;
+}
+
+.vector2 {
+  position: absolute;
+  top: 600px;
+  left: 480px;
+  width: 50px;
+  z-index: 1;
+  display: block;
+}
+
+@media screen and (max-width: 630px) {
+    #home {
+        height: 600px;
+    }
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 85%;
+    margin: 0px;
+    
+  }
+  .heading-collab {
+    font-size: 30px;
+    line-height: 50px;
+    width: 100%;
+
+  }
+  .shape {
+    top:105px;
+    left:45px;
+    width:50px;
+  }
+ 
+  .vector4{
+    top:105px;
+    right:0px;
+    width: 40px;
+  }
+ 
+  .vector2{
+    top: 500px;
+    left: 50px;
+    width: 40px;
+  }
+  .vector1,.vector3,.vector,.mac,.board,.clock{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 85%;
+    margin: 0px;
+    
+  }
+  .heading-collab {
+    font-size: 30px;
+    line-height: 50px;
+    width: 100%;
+
+  }
+  .shape {
+    top:105px;
+    left:45px;
+    width:50px;
+  }
+ 
+  .vector4{
+    top:105px;
+    right:0px;
+    width: 40px;
+  }
+ 
+  .vector2{
+    top: 550px;
+    left: 50px;
+    width: 40px;
+  }
+  .mac{
+    width:200px
+  }
+  .board{
+    width: 120px;
+    right: 200px;
+  }
+  .vector3{
+    width: 40px;
+    top:600px;
+    right: 260px;
+  }
+  .vector1{
+    width: 40px;
+    top: 470px;
+    right: 100px;
+  }
+  
+  .shape,.vector{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 85%;
+    margin-top: 30px;
+    
+    
+  }
+  .clock {
+    top:100px;
+    left: 100px;
+    width: 90px;
+  }
+  .vector {
+    top: 80px;
+    left: 50px;
+    width: 70px;
+  }
+
+  .heading-collab {
+    font-size: 30px;
+    line-height: 50px;
+    width: 100%;
+
+  }
+  
+ 
+  .vector4{
+    top:105px;
+    right:0px;
+    width: 40px;
+  }
+ 
+  .vector2{
+    top: 550px;
+    left: 50px;
+    width: 40px;
+  }
+  .mac{
+    width:200px
+  }
+  .board{
+    width: 120px;
+    right: 200px;
+  }
+  .vector3{
+    width: 40px;
+    top:600px;
+    right: 260px;
+  }
+  .vector1{
+    width: 40px;
+    top: 470px;
+    right: 100px;
+  }
+  
+  .shape{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1300px)
+{
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 85%;
+    margin-top: 30px;
+    
+    
+  }
+  .clock {
+    top:100px;
+    left: 100px;
+    width: 90px;
+  }
+  .vector {
+    top: 80px;
+    left: 50px;
+    width: 70px;
+  }
+
+  
+  .vector4{
+    top:105px;
+    right:0px;
+    width: 40px;
+  }
+ 
+  .vector2{
+    top: 550px;
+    left: 50px;
+    width: 40px;
+  }
+  .mac{
+    width:200px
+  }
+  .board{
+    width: 120px;
+    right: 200px;
+  }
+  .vector3{
+    width: 40px;
+    top:600px;
+    right: 260px;
+  }
+  .vector1{
+    width: 40px;
+    top: 470px;
+    right: 100px;
+  }
+  
+  .shape{
+    display: none;
+  }
+}
+
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+  text-align: center;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.stats-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stats-container h1 {
+  color: #18063C;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stats-container p {
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .stats-container {
+    gap: 100px;
+  }
+
+  .stats-container h1 {
+    font-size: 28px;
+  }
+
+  .stats-container p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .stats-container h1 {
+    font-size: 24px;
+  }
+
+  .stats-container p {
+    font-size: 12px;
+  }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+  .stats-container {
+    gap: 30px;
+  }
+
+  .stats-container h1 {
+    font-size: 20px;
+  }
+
+  .stats-container p {
+    font-size: 10px;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+/* Features Section */
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  
+  
+}
+#features h1{
+  font-size: 40px;
+  font-weight: 600;
+  color: #18063C;
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px 0;
+  width:80%;
+}
+
+
+.feature-contain {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items to the next line */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 20px; /* Space between the boxes */
+  margin: 20px auto;
+  padding: 20px;
+  width:80%;
+}
+.power-feature{
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  margin: 0;
+}
+.feature-card {
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Fixed width for each card */
+  text-align: left; /* Align the content to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Lift the card when hovered */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.feature-card img {
+ 
+  height: 70px;
+  border:10px solid #bbc9ea;
+  width:70px;
+  border-radius: 8px;
+}
+
+.feature-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.feature-para{
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .feature-card {
+    width: 45%; /* 2 boxes per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%; /* 1 box per row on smaller screens */
+  }
+}
