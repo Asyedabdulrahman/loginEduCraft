@@ -527,3 +527,105 @@
     width: 100%; /* 1 box per row on smaller screens */
   }
 }
+
+
+.feature-card-second{
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Fixed width for each card */
+  text-align: left; /* Align the content to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Benefits Section */
+#benefits {
+  padding: 3rem 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.benefits-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.benefits-description {
+  font-size: 1.2rem;
+}
+
+.benefits-list {
+  border-radius: 30px;
+  
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  border-radius: 20px; /* Add border-radius for the benefit item */
+  overflow: hidden; /* Ensures the border-radius works correctly */
+}
+
+.benefit-item.flex-row {
+  flex-direction: row; /* Image on the left, text on the right */
+}
+
+.benefit-item.flex-row-reverse {
+  flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+.benefit-box {
+  display: flex;
+  align-items: center; /* Ensures the image and content are aligned properly */
+  justify-content: space-between; /* Evenly spaces the image and content */
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 20px; /* Add border-radius to the benefit box */
+}
+
+.benefit-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.benefit-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.benefit-content p {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .benefit-item {
+    justify-content: center;
+  }
+
+  .benefit-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .benefit-image {
+    width: 120px;
+    height: 120px;
+  }
+}
